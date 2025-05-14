@@ -1,0 +1,65 @@
+ .container { margin-top: 40px; }
+    input[type="number"] 
+    {
+      -moz-appearance: textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button 
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      text-align: center;
+      flex: 1;
+    }
+    .logo img {
+      max-height: 80px;
+    }
+    .customer-info {
+      flex: 1;
+    }
+    .date-info {
+      text-align: right;
+      flex: 1;
+    }
+    .remove-btn {
+      margin-top: 20px;
+    }
+  .logo-upload-btn {
+    margin-top: 10px;
+  }
+
+  .logo-upload-btn .btn-floating {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .file-path-wrapper {
+    margin-top: 10px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .invoice-header {
+    margin-bottom: 0px;
+  }
+
+  #logoPreview {
+    display: block;
+    margin: 0 auto;
+  }
+
+.center-btn {
+  float: none !important;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
