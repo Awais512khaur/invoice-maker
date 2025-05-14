@@ -1,14 +1,14 @@
-# Use official PHP image with Apache
-FROM php:8.2-apache
+# Use the official PHP image with Apache
+FROM php:8.1-apache
 
-# Enable Apache mod_rewrite if needed
+# Copy only the PHP files from the nested folder
+COPY invoice-maker/php /var/www/html
+
+# Enable Apache mod_rewrite (only needed if you use routing)
 RUN a2enmod rewrite
 
-# Set working directory
-WORKDIR /var/www/html
+# Set permissions (optional but safe)
+RUN chown -R www-data:www-data /var/www/html
 
-# Copy contents into container
-COPY invoice-maker/php/ ./
-
-# Open port 80 for Render
+# Expose the default Apache port
 EXPOSE 80
