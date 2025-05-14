@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: invoice-maker
+    runtime: docker
+    repo: https://github.com/Awais512khaur/invoice-maker
+    branch: master
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: true

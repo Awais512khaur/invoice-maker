@@ -5,5 +5,3 @@
 # Description: This program generates an invoice for a customer based on the no items and price.
 # To run this program , you need to have php installed in your system.
 # then run this following command in your terminal to run this program (composer require dompdf/dompdf)
-
-

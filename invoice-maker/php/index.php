@@ -1,5 +1,3 @@
-
-  <!-- Form -->
 <?php
 include '../html/links.php';
 include '../html/form.php';
